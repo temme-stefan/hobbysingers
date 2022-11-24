@@ -1,0 +1,34 @@
+/*
+Theme Name:   Catch Base Child
+Theme URI:    https://github.com/temme-stefan/hobbysingers
+Description:  Catch Base Child Theme
+Author:       Stefan Temme
+Author URI:   https://codingdad.temme.dev
+Template:     catch-base
+Version:      0.0.1
+License:      GNU General Public License version 3 (GPLv3)
+License URI:  http://www.gnu.org/licenses/gpl-3.0.txt
+Tags:         blog, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, front-page-post-form, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain:  catch-base
+*/
+
+.entry-content ul > li{
+    list-style:none;
+    margin-bottom:2em;
+    padding:0.5em;
+    box-shadow: 0 2px 6px rgb(100 100 100 / 30%);
+}
+.entry-content ul > li:hover{
+    outline:magenta;
+}
+
+.entry-content ul{
+    margin-left:0;
+}
+
+.wp-block-table>table{
+    margin-bottom:0
+}
+.wp-block-table{
+    margin-bottom: 2em;
+}
