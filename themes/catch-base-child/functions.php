@@ -21,7 +21,8 @@ function enqueCustomStyle(){
 
 function giveParentCredit($content){
 	$theme_data = wp_get_theme()->parent();
-	$content['right'].=	esc_attr( $theme_data->get( 'Name') ) . '&nbsp;' . __( 'by', 'catch-base' ). '&nbsp;<a target="_blank" href="'. esc_url( $theme_data->get( 'AuthorURI' ) ) .'">'. esc_attr( $theme_data->get( 'Author' ) ) .'</a>';
+	$content['right'].=' '.esc_attr( $theme_data->get( 'Name') ) . '&nbsp;' . __( 'by', 'catch-base' ). '&nbsp;<a target="_blank" href="'. esc_url( $theme_data->get( 'AuthorURI' ) ) .'">'. esc_attr( $theme_data->get( 'Author' ) ) .'</a>';
+	return $content;
 }
 
 \add_filter( 'catchbase_get_content','CatchBaseChild\giveParentCredit');
