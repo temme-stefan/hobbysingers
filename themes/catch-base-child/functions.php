@@ -26,3 +26,10 @@ function giveParentCredit($content){
 }
 
 \add_filter( 'catchbase_get_content','CatchBaseChild\giveParentCredit');
+
+function forceFooterReload(){
+	global $catchbase_footer_content;
+	$catchbase_footer_content = null;
+}
+
+\add_action( 'catchbase_footer', 'CatchBaseChild\forceFooterReload', 90 );
