@@ -2,9 +2,9 @@
 namespace CatchBaseChild;
 
 function enqueCustomStyle(){
-    wp_enqueue_style( 'child-style',
+    wp_enqueue_style( 'catchbase-child-style',
         get_stylesheet_uri(),
-        array( 'parenthandle' ),
+        array( 'catchbase-style' ),
         wp_get_theme()->get( 'Version' )
     );
 }
