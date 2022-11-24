@@ -27,7 +27,8 @@ function giveParentCredit($content){
 
 
 function setupCustomHooks(){
+	delete_transient( 'catchbase_footer_content' );
 	\add_filter( 'catchbase_get_content','CatchBaseChild\giveParentCredit');
 }
-\add_action('after_setup_theme','CatchBaseChild\setupCustomHooks');
+\add_action('catchbase_footer','CatchBaseChild\setupCustomHooks');
 
