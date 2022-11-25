@@ -43,7 +43,7 @@ function giveParentCredit( $content ) {
 
 function setupCustomHooks() {
 	delete_transient( 'catchbase_footer_content' );
-	load_theme_textdomain( 'catch-base', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'catch-base-child', get_template_directory() . '/languages' );
 	\add_filter( 'catchbase_get_content', 'CatchBaseChild\giveParentCredit' );
 }
 
