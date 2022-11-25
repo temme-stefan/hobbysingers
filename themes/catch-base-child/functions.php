@@ -32,8 +32,8 @@ function giveParentCredit( $content ) {
 	                     . '<br/>'
 	                     . __( 'Modified by', 'catch-base-child' )
 	                     . '&nbsp;<a target="_blank" href="'
-	                     . esc_url( $theme_data_parent->get( 'AuthorURI' ) )
-	                     . '">' . esc_attr( $theme_data_parent->get( 'Author' ) )
+	                     . esc_url( $theme_data->get( 'AuthorURI' ) )
+	                     . '">' . esc_attr( $theme_data->get( 'Author' ) )
 	                     . '</a>'
 	                     . '<br/>';
 
