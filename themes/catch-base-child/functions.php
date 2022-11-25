@@ -30,7 +30,7 @@ function giveParentCredit( $content ) {
 	                     . '">' . esc_attr( $theme_data_parent->get( 'Author' ) )
 	                     . '</a>'
 	                     . '<br/>'
-	                     . __( 'Modified by', 'hobbysingers' )
+	                     . __( 'Modified by', 'catch-base-child' )
 	                     . '&nbsp;<a target="_blank" href="'
 	                     . esc_url( $theme_data->get( 'AuthorURI' ) )
 	                     . '">' . esc_attr( $theme_data->get( 'Author' ) )
@@ -49,7 +49,7 @@ function setupCustomHooks() {
 \add_action( 'catchbase_footer', 'CatchBaseChild\setupCustomHooks' );
 
 function setup(){
-	\load_theme_textdomain( 'hobbysingers', \get_template_directory() . '/languages' );
+	\load_theme_textdomain( 'catch-base-child', \get_template_directory() . '/languages' );
 }
 
 \add_action( 'after_setup_theme', 'CatchBaseChild\setup' );
