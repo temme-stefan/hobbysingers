@@ -1,0 +1,2 @@
+msgid "Modified by"
+msgstr ""
