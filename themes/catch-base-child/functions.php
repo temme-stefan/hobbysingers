@@ -34,8 +34,7 @@ function giveParentCredit( $content ) {
 	                     . '&nbsp;<a target="_blank" href="'
 	                     . esc_url( $theme_data->get( 'AuthorURI' ) )
 	                     . '">' . esc_attr( $theme_data->get( 'Author' ) )
-	                     . '</a>'
-	                     . '<br/>';
+	                     . '</a>';
 
 	return $content;
 }
@@ -48,8 +47,8 @@ function setupCustomHooks() {
 
 \add_action( 'catchbase_footer', 'CatchBaseChild\setupCustomHooks' );
 
-function setup(){
-	\load_child_theme_textdomain( 'catch-base-child', \get_stylesheet_directory()  . '/languages' );
+function setup() {
+	\load_child_theme_textdomain( 'catch-base-child', \get_stylesheet_directory() . '/languages' );
 }
 
 \add_action( 'after_setup_theme', 'CatchBaseChild\setup' );
