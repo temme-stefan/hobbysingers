@@ -49,7 +49,7 @@ function setupCustomHooks() {
 \add_action( 'catchbase_footer', 'CatchBaseChild\setupCustomHooks' );
 
 function setup(){
-	\load_theme_textdomain( 'catch-base-child', \get_template_directory() . '/languages' );
+	\load_child_theme_textdomain( 'catch-base-child', \get_stylesheet_directory()  . '/languages' );
 }
 
 \add_action( 'after_setup_theme', 'CatchBaseChild\setup' );
