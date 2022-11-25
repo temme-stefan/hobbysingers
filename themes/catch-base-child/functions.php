@@ -42,10 +42,14 @@ function giveParentCredit( $content ) {
 
 
 function setupCustomHooks() {
-	delete_transient( 'catchbase_footer_content' );
-	load_theme_textdomain( 'catch-base-child', get_template_directory() . '/languages' );
+	\delete_transient( 'catchbase_footer_content' );
 	\add_filter( 'catchbase_get_content', 'CatchBaseChild\giveParentCredit' );
 }
 
 \add_action( 'catchbase_footer', 'CatchBaseChild\setupCustomHooks' );
 
+function setup(){
+	\load_theme_textdomain( 'catch-base-child', \get_template_directory() . '/languages' );
+}
+
+\add_action( 'after_setup_theme', 'CatchBaseChild\setup' );
