@@ -54,7 +54,8 @@ function setup() {
 \add_action( 'after_setup_theme', 'CatchBaseChild\setup' );
 
 function alterThemeOptions($options){
-	var_dump($options);
+	$options['move_title_tagline']=true;
+	return $options;
 }
 
 \add_filter('theme_mod_catchbase_theme_options','CatchBaseChild\alterThemeOptions');
