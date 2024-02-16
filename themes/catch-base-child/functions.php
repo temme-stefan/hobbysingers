@@ -52,3 +52,9 @@ function setup() {
 }
 
 \add_action( 'after_setup_theme', 'CatchBaseChild\setup' );
+
+function alterThemeOptions($options){
+	$options['move_title_tagline']=true;
+}
+
+\add_filter('theme_mod_catchbase_theme_options','CatchBaseChild\alterThemeOptions');
